@@ -27,3 +27,8 @@
         }
     }
 }
+ sl
+ TestWSUS
+
+
+ Start-DscConfiguration -Path C:\PowerShell\TestWSUS -wait -Verbose
