@@ -5,11 +5,11 @@
 skip_commits:
   message: /updated readme.*/
 
-os: Windows Server 2012 R2
 
 install:
   - cinst pester
   - git clone https://github.com/fabiendibot/cMicrosoftUpdate "C:\Program Files\WindowsPowerShell\Modules\cMicrosoftUpdate"
+  - ps: winrm quickconfig -force
 
 build: false
 

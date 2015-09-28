@@ -9,4 +9,4 @@ Enable-PSRemoting -Force
  
 ( TestWSUS ).FullName | Set-Content -Path .\Artifacts.txt
  
-Start-DscConfiguration -ComputerName 'localhost'  -Path .\TestWSUS -Wait -Force -verbose
+Start-DscConfiguration -Path .\TestWSUS -Wait -Force -verbose
