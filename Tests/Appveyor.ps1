@@ -3,6 +3,8 @@
 
 "`n`tPerforming DSC Configuration`n"
 
+Enable-PSRemoting -Force
+
 . .\Tests\WSUSConfig.ps1
  
 ( TestWSUS ).FullName | Set-Content -Path .\Artifacts.txt
