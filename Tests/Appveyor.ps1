@@ -9,6 +9,8 @@ Remove-item -path "C:\projects\cmicrosoftupdate" -Recurse -force
 
 get-module  -ListAvailable -FullyQualifiedName cMicrosoftUpdate | Select ModuleBase
 
+$env:PSModulePath
+
 "`n`tPerforming DSC Configuration`n"
 
 Enable-PSRemoting -Force
