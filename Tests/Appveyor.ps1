@@ -4,7 +4,7 @@
 "`n`tPerforming DSC Configuration`n"
 
 Enable-PSRemoting -Force
-Get-Module -ListAvailable -FullyQualifiedName
+Get-Module -ListAvailable -FullyQualifiedName cMicrosoftUpdate
 . .\Tests\WSUSConfig.ps1
  
 ( TestWSUS ).FullName | Set-Content -Path .\Artifacts.txt
