@@ -1,6 +1,6 @@
 ﻿Configuration TestWSUS {
     
-    Import-DscResource -ModuleName cMicrosoftUpdate
+    Import-DscResource -Module cMicrosoftUpdate
  
     Node localhost {
         
