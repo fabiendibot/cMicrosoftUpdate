@@ -1,9 +1,10 @@
 # This script will invoke a DSC configuration
-$PSModuleAutoloadingPreference = “none”
+# This is a simple proof of concept
+$PSModuleAutoloadingPreference = "none"
 
-New-Item -Path "C:\Users\appveyor\Documents\WindowsPowerShell\Modules" -Name "cMicrosoftUpdate" -Force -ItemType Directory
-New-Item -Path "C:\Users\appveyor\Documents\WindowsPowerShell\Modules\cMicrosoftUpdate" -Name "0.0.1" -Force -ItemType Directory
-Copy-Item -Path "C:\projects\cmicrosoftupdate\*" -Destination "C:\Users\appveyor\Documents\WindowsPowerShell\Modules\cMicrosoftUpdate\0.0.1"
+New-Item -Path "C:\Program Files\WindowsPowerShell\Modules" -Name "cMicrosoftUpdate" -Force -ItemType Directory
+New-Item -Path "C:\Program Files\WindowsPowerShell\Modules\cMicrosoftUpdate" -Name "0.0.1" -Force -ItemType Directory
+Copy-Item -Path "C:\projects\cmicrosoftupdate\*" -Destination "C:\Program Files\WindowsPowerShell\Modules\cMicrosoftUpdate\0.0.1"
 
 "`n`tPerforming DSC Configuration`n"
 
