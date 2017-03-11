@@ -1,6 +1,5 @@
 # This script will invoke a DSC configuration
 # This is a simple proof of concept
-$PSModuleAutoloadingPreference = "none"
 
 $env:PSModulePath = "C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules"
 
