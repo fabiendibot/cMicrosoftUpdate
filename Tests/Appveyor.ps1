@@ -5,8 +5,6 @@
 
 Enable-PSRemoting -Force
 
-Get-DSCResource
-
 . .\Tests\WSUSConfig.ps1
  
 ( TestWSUS ).FullName | Set-Content -Path .\Artifacts.txt
