@@ -7,7 +7,7 @@ New-Item -Path "C:\Program Files\WindowsPowerShell\Modules\cMicrosoftUpdate" -Na
 Copy-Item -Path "C:\projects\cmicrosoftupdate\*" -Destination "C:\Program Files\WindowsPowerShell\Modules\cMicrosoftUpdate\0.0.1"
 Remove-item -path "C:\projects\cmicrosoftupdate" -Recurse -force
 
-Get-DscResource
+get-module  -ListAvailable -FullyQualifiedName cMicrosoftUpdate | Select ModuleBase
 
 "`n`tPerforming DSC Configuration`n"
 
